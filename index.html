@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For My Love ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="main-container">
+
+    <!-- CINEMATIC INTRO -->
+<section id="introSection" class="card intro-screen active">
+    <div class="intro-content">
+
+        <h1 class="intro-title">
+            Our Story Begins...
+        </h1>
+
+        <p class="intro-subtitle">
+            This is not just a website.
+            It is a little universe made for us.
+            A memory. A journey. A forever.
+        </p>
+
+        <button id="startBtn" class="enter-btn">
+            Enter Here ✨
+        </button>
+
+    </div>
+</section>
+
+
+
+
+
+    <!-- QUIZ SECTION -->
+    <section id="quizSection" class="card hidden">
+        <h1>💖 Love Quiz 💖</h1>
+        <p id="question"></p>
+        <div id="answers"></div>
+        <button id="nextBtn">Next Question</button>
+        <p class="score">Score: <span id="score">0</span></p>
+        <div id="reward" class="reward"></div>
+    </section>
+
+
+    <!-- PASSWORD SECTION -->
+    <section id="passwordSection" class="card hidden">
+        <h2>🔐 Enter Our Special Date</h2>
+        <input type="password" id="passwordInput" placeholder="Enter secret date...">
+        <button id="unlockBtn">Unlock Memories 💌</button>
+        <p id="passwordError" class="error"></p>
+    </section>
+
+
+    <!-- GALLERY SECTION -->
+    <section id="gallerySection" class="card hidden">
+        <h2>✨ Our Beautiful Memories ✨</h2>
+
+        <div class="gallery">
+            <div class="image-card">
+                <img src="images/photo1.jpeg"
+                     onclick="openNote('This was the best day I spent with you 💖')">
+            </div>
+
+            <div class="image-card">
+                <img src="images/photo2.jpeg"
+                     onclick="openNote('Every day is full of surprises with you 😘')">
+            </div>
+        </div>
+
+        <button id="continueBtn">Continue ❤️</button>
+    </section>
+
+
+    <!-- FINAL SECTION -->
+    <section id="finalSection" class="card hidden">
+        <h1>I Love You Forever ❤️</h1>
+        <p id="typewriterText" class="love-letter"></p>
+    </section>
+
+</div>
+
+
+<!-- LOVE NOTE POPUP -->
+<div id="notePopup" class="popup">
+        <div class="popup-box">
+        <span id="closePopup">&times;</span>
+        <p id="popupText"></p>
+    </div>
+</div>
+
+
+<!-- CONFETTI LIBRARY -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
